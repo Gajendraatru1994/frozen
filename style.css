@@ -1,0 +1,282 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.navbar {
+    background-color: rgb(228, 215, 215);
+    position: relative;
+    /* border: 2px solid red; */
+    height: 20vh;
+}
+
+.navbar .logo {
+    /* border: 2px solid red;*/
+
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    font-size: 30px;
+
+
+}
+
+.navbar .navigation {
+    width: fit-content;
+    position: relative;
+    right: ;
+
+    display: inline-block;
+    /* border: 2px solid red; */
+    z-index: 5;
+}
+
+.navbar .navigation li {
+    display: inline-block;
+    padding: 0px 30px;
+
+}
+
+.navbar .navigation li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .navigation li a:active {
+    background: #1b9bff;
+    transition: .5s;
+
+}
+
+.navbar .navigation .about {
+    display: none;
+    position: absolute;
+    /* margin-left: -60px; */
+    color: rgb(128, 57, 57);
+    right: 10px;
+    background-color: #1b9bff;
+}
+
+
+.navigation li:hover .about,
+.navigation li:active .about {
+    display: block;
+    /* border: 2px solid yellow; */
+
+}
+
+
+.checkbtn i {
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    color: white;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    .logo {
+        font-size: 30px;
+        padding-left: 80px;
+    }
+}
+
+@media (max-width:858px) {
+    .navbar {
+        background-color: rgb(228, 215, 215);
+        position: relative;
+        /* border: 2px solid red; */
+        height: 14vh;
+    }
+
+    .navbar .logo {
+        /* border: 2px solid red;*/
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        font-size: 35px;
+    }
+
+    .checkbtn i {
+        display: inline-block;
+        position: relative;
+        left: 40rem;
+    }
+
+    .navbar .navigation {
+        position: fixed;
+        width: 100%;
+        height: 35vh;
+        left: -100%;
+        top: 80px;
+        font-size: 30px;
+        background: #1b9bff;
+        text-align: center;
+        transition: all 0.5s;
+        /* display: none; */
+    }
+    #check: :checked~navigation{
+        left: 0px;
+    }
+
+    .navbar .navigation li {
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+
+    .navbar .navigation li a {
+        font-size: 24px;
+        /* color: rgb(66, 24, 24); */
+    }
+
+     /* .checkbtn i :hover .navbar .navigation {
+        display: block;
+
+    } */
+    .navbar .navigation .about { 
+        display: none;
+        position: absolute;
+        left: 200px;
+        bottom: 0px;
+        color: rgb(128, 57, 57);
+        background-color: #1b9bff;
+
+    }
+    
+    
+    .navigation li:hover .about,
+    .navigation li:active .about {
+        display: block;
+
+        /* border: 2px solid yellow; */
+    
+    }
+    
+}
+
+.main {
+    position: absolute;
+    height: auto;
+
+}
+
+.main img1 {
+    height: 70vh;
+}
+
+.small {
+    width: 13vw;
+    height: 21vh;
+    display: inline-block;
+    background: url(images/icons.png) no-repeat;
+    margin: auto;
+    position: relative;
+    left: 57rem;
+    bottom: 15rem;
+}
+
+.small #freeze {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.main #freeze {
+    padding: 50px 0px;
+    display: inline-block;
+    font-size: 28px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 26px;
+    color: white;
+}
+
+@media only screen and (max-width:1199px) {
+    .small {
+        width: 16vw;
+        height: 21vh;
+        margin: auto;
+        position: relative;
+        left: 43rem;
+        bottom: 13rem;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+    .small {
+        width: 20vw;
+        height: 28vh;
+        margin: auto;
+        position: relative;
+        left: 27rem;
+        bottom: 4rem;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .small {
+        width: 27vw;
+        height: 28vh;
+        margin: auto;
+        position: relative;
+        left: 13rem;
+        bottom: 2rem;
+    }
+
+    .main #freeze {
+        font-size: 29px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .small {
+        width: 35vw;
+        height: 28vh;
+        margin: auto;
+        position: relative;
+        left: 10rem;
+        bottom: 1rem;
+    }
+
+    .small #freeze {
+        font-size: 30px;
+    }
+}
+
+.bg-header-about img {
+    /* background: url(images/bg-header-about.jpg) no-repeat; */
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 40vh;
+    /* margin: 0px auto;
+    display: block; */
+}
+
+#blog a {
+    text-decoration: none;
+}
+
+.map {
+    background: url(images/map.jpg) no-repeat;
+    width: 100%;
+    height: 26vh;
+    position: absolute;
+}
+
+.map1 {
+    /* border: 2px solid black; */
+    width: 60%;
+    height: 23vh;
+    position: relative;
+    top: 1rem;
+    background-color: rgba(219, 241, 240, 0.7);
+}
